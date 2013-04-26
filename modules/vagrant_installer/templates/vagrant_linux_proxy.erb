@@ -2,4 +2,4 @@
 #
 # This script just forwards all arguments to the real vagrant binary.
 
-<%= @linux_prefix %>/bin/vagrant "$@"
+exec <%= @linux_prefix %>/bin/vagrant "$@"

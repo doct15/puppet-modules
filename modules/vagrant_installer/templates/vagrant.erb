@@ -88,4 +88,4 @@ case $OS in
 esac
 
 # Call the actual Vagrant bin with our arguments
-"${RUBY_EXECUTABLE}" "${VAGRANT_EXECUTABLE}" "$@"
+exec "${RUBY_EXECUTABLE}" "${VAGRANT_EXECUTABLE}" "$@"
